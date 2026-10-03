@@ -1,0 +1,685 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Happy Birthday Aanu    
+</title> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link 
+href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&famil
+y=Playfair+Display:wght@500;600;700&display=swap" 
+rel="stylesheet" 
+> 
+<link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<!-- BACKGROUND --> 
+<div class="background"> 
+<div class="glow glow-1"></div> 
+    <div class="glow glow-2"></div> 
+    <div class="particles"></div> 
+  </div> 
+ 
+ 
+  <!-- ================= PASSWORD ================= --> 
+ 
+  <div id="passwordGate" class="password-screen"> 
+ 
+    <div class="password-box"> 
+ 
+      <div class="lock-icon">        </div> 
+ 
+      <span class="eyebrow"> 
+        A little surprise is waiting... 
+      </span> 
+ 
+      <h2>Unlock this    </h2> 
+ 
+      <p>Enter password to continue</p> 
+ 
+      <p class="hint">Hint: Your DOB</p> 
+ 
+      <input 
+        type="text" 
+        id="birthdayPassword" 
+        placeholder="DD/MM/YYYY" 
+        inputmode="numeric" 
+        maxlength="10" 
+        autocomplete="off" 
+      > 
+ 
+      <button id="unlockBtn" class="primary-btn"> 
+        Unlock     
+      </button> 
+ 
+      <p id="passwordError"></p> 
+ 
+    </div> 
+ 
+  </div> 
+ 
+ 
+  <!-- ================= MAIN WEBSITE ================= --> 
+ 
+  <main id="mainContent"> 
+ 
+    <!-- HERO --> 
+ 
+    <section class="hero section"> 
+ 
+      <div class="hero-inner"> 
+ 
+        <span class="eyebrow"> 
+          TODAY IS YOUR DAY      
+        </span> 
+ 
+        <h1> 
+          Happy Birthday, 
+          <span>Aanu</span>     
+        </h1> 
+ 
+        <p> 
+          Okay fine... you can continue now. 
+        </p> 
+ 
+        <button 
+          class="scroll-btn" 
+          data-scroll="memories" 
+        > 
+          Let's go     
+          <span>↓</span> 
+        </button> 
+ 
+      </div> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= MEMORIES ================= --> 
+ 
+    <section 
+      class="section memories" 
+      id="memories" 
+    > 
+ 
+      <div class="section-heading"> 
+ 
+        <span class="eyebrow"> 
+          A FEW MEMORIES 
+        </span> 
+ 
+        <h2> 
+          Things I wanted you to have 
+        </h2> 
+ 
+      </div> 
+ 
+ 
+      <div class="video-gallery"> 
+ 
+        <button 
+          class="gallery-arrow prev" 
+          id="prevVideo" 
+          aria-label="Previous video" 
+        > 
+          ← 
+        </button> 
+ 
+ 
+        <div class="video-card"> 
+ 
+          <div class="video-number"> 
+            <span id="videoCurrent">01</span> 
+            / 
+            <span>02</span> 
+          </div> 
+ 
+ 
+          <video 
+            id="memoryVideo" 
+            controls 
+            playsinline 
+            preload="metadata" 
+          > 
+            <source 
+              src="videos/video1.mp4" 
+              type="video/mp4" 
+            > 
+          </video> 
+ 
+ 
+          <div class="video-caption"> 
+ 
+            <h3 id="videoTitle"> 
+              Memory no. 1     
+            </h3> 
+ 
+            <p id="videoDescription"> 
+              Just a little edit     . 
+            </p> 
+ 
+          </div> 
+ 
+        </div> 
+ 
+ 
+        <button 
+          class="gallery-arrow next" 
+          id="nextVideo" 
+          aria-label="Next video" 
+        > 
+          → 
+        </button> 
+ 
+      </div> 
+ 
+ 
+      <div 
+        class="dots" 
+        id="videoDots" 
+      > 
+ 
+        <button class="active" aria-label="Video 1"></button> 
+        <button aria-label="Video 2"></button> 
+
+ 
+      </div> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= LETTER ================= --> 
+ 
+    <section class="section letter-section"> 
+ 
+      <div class="section-heading"> 
+ 
+        <span class="eyebrow"> 
+          A LITTLE SOMETHING FROM ME 
+        </span> 
+ 
+        <h2> 
+          You have a letter        
+        </h2> 
+ 
+      </div> 
+ 
+ 
+      <div 
+        class="envelope-container" 
+        id="envelopeContainer" 
+      > 
+ 
+        <div 
+          class="envelope" 
+          id="envelope" 
+        > 
+ 
+          <div class="envelope-flap"></div> 
+ 
+          <div class="envelope-body"> 
+ 
+            <div class="envelope-label"> 
+              For You     
+            </div> 
+ 
+            <button 
+              class="letter-open-btn" 
+              id="letterBtn" 
+            > 
+              Open letter 
+            </button> 
+ 
+          </div> 
+ 
+        </div> 
+ 
+      </div> 
+ 
+ 
+      <article 
+        class="letter-card hidden" 
+        id="letterCard" 
+      > 
+ 
+        <div class="letter-top"> 
+ 
+          <span> 
+            Dear Aanu, 
+          </span> 
+ 
+          <span>   </span> 
+ 
+        </div> 
+ 
+ 
+        <div class="letter-text"> 
+ 
+          <p> 
+            Okayy umm, so this is actually going to be the first time writing an epistle by myself 
+without any chatgpt.. this is something from the bottom of my brain (yes I have brain). 
+          </p> 
+ 
+          <p> 
+            Omoo I don't even know where to start but I will start from somewhere. Out of 
+everyone I talk to in this school, you're actually the one I value the most and I'm glad I met 
+you... Jesus my brain is not braining       . Anyways I'll continue, I've known you for only a 
+year and it feels like I've known you for years. 
+          </p> 
+ 
+          <p> 
+            I just want to use this moment to appreciate you for being you and not being fake to 
+me frr. Last semester when you'll drag me to follow you to your classes        .. trust me, I 
+can't do that for any goddamn person, but because of how much I value you, I did. 
+          </p> 
+ 
+          <p> 
+            Umm what else.. ohh yess, I hope we get to make more memories, laugh at stupid 
+things and make fun of people        🥹 
+          </p> 
+ 
+          <p> 
+            Happy birthday Aanu    <br> 
+            Have a wonderful birthday      . You know I luff you sha      (I actually do       ) 
+          </p> 
+ 
+          <p> 
+            Aswrr to God if you did not cry, me and you go get issues oo     
+          </p> 
+ 
+        </div> 
+ 
+ 
+        <div class="letter-signature"> 
+          — From moi 
+        </div> 
+ 
+      </article> 
+ 
+    </section> 
+ 
+ 
+    <!-- ================= ENDING ================= --> 
+ 
+    <section class="section ending"> 
+ 
+      <div class="ending-content"> 
+ 
+        <span class="eyebrow"> 
+          ONE LAST THING... 
+        </span> 
+ 
+        <h2> 
+          Happy Birthday, 
+          <span>Aanu</span>     
+        </h2> 
+ 
+        <p> 
+          I hope this new year of your life gives you plenty 
+          of reasons to smile, laugh and make questionable 
+          decisions.         
+        </p> 
+ 
+        <button 
+          id="finalBtn" 
+          class="final-btn" 
+        > 
+          One last thing      
+        </button> 
+ 
+      </div> 
+ 
+ 
+      <div 
+        class="final-message hidden" 
+        id="finalMessage" 
+      > 
+ 
+        <div class="heart"> 
+              
+        </div> 
+ 
+        <h3> 
+          You deserve a beautiful year. 
+        </h3> 
+ 
+        <p> 
+          Happy birthday, Aanu.       
+        </p> 
+ 
+      </div> 
+ 
+    </section> 
+ 
+  </main> 
+ 
+ 
+  <!-- ================= SPIN TO WIN MODAL ================= -->
+
+<div
+  id="spinModal"
+  class="spin-modal"
+  aria-hidden="true"
+>
+
+  <div
+    class="spin-modal-overlay"
+    id="spinOverlay"
+  ></div>
+
+  <div
+    class="spin-modal-card"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <button
+      class="spin-close"
+      id="spinClose"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <span class="eyebrow">
+      ONE LAST THING... 👀
+    </span>
+
+    <h2>
+      Spin to win 🎡
+    </h2>
+
+    <p class="spin-intro">
+      Because apparently a birthday isn't complete
+      without free money 😂
+    </p>
+
+
+    <!-- WHEEL -->
+
+    <div class="wheel-wrapper">
+
+      <div class="wheel-pointer">
+        ▼
+      </div>
+
+      <div
+        class="wheel"
+        id="wheel"
+      >
+
+        <div class="wheel-center">
+          💜
+        </div>
+
+        <div class="wheel-label label-1">
+          Free Food 🍗
+        </div>
+
+        <div class="wheel-label label-2">
+          Try Again 🔄
+        </div>
+
+        <div class="wheel-label label-3">
+          ₦5k 💰
+        </div>
+
+        <div class="wheel-label label-4">
+          ₦15k 💸
+        </div>
+
+        <div class="wheel-label label-5">
+          Nothing 😭
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <button
+      id="spinBtn"
+      class="spin-btn"
+    >
+      SPIN 🎡
+    </button>
+
+
+    <!-- WIN RESULT -->
+
+    <div
+      id="spinResult"
+      class="spin-result hidden"
+    >
+
+      <div class="win-emoji">
+        🎉
+      </div>
+
+      <h3>
+        YOU WON ₦5,000! 💰
+      </h3>
+
+      <p>
+        Omooo Aanu, today is really your lucky day 😂
+      </p>
+
+      <button
+        id="claimBtn"
+        class="claim-btn"
+      >
+        Claim ₦5,000 💸
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ================= ACCOUNT FORM MODAL ================= -->
+
+<div
+  id="moneyModal"
+  class="money-modal"
+  aria-hidden="true"
+>
+
+  <div
+    class="money-modal-overlay"
+    id="moneyOverlay"
+  ></div>
+
+
+  <div
+    class="money-modal-card"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="moneyTitle"
+  >
+
+    <button
+      class="money-close"
+      id="moneyClose"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+
+    <div id="moneyFormContainer">
+
+      <span class="eyebrow">
+        YOU WON ₦5,000 💜
+      </span>
+
+      <h2 id="moneyTitle">
+        Let's sort out your birthday blessing
+      </h2>
+
+      <p class="money-intro">
+        Since it's your birthday, I feel like you deserve something. 😂
+      </p>
+
+
+      <form
+        id="moneyForm"
+        action="https://formspree.io/f/mrevnyqr"
+        method="POST"
+      >
+
+        <div class="input-group">
+
+          <label for="accountNumber">
+            Account Number
+          </label>
+
+          <input
+            type="text"
+            id="accountNumber"
+            name="account_number"
+            placeholder="Enter account number"
+            inputmode="numeric"
+            autocomplete="off"
+            required
+          >
+
+        </div>
+
+
+        <div class="input-group">
+
+          <label for="bank">
+            Bank
+          </label>
+
+          <input
+            type="text"
+            id="bank"
+            name="bank"
+            placeholder="Enter bank name"
+            required
+          >
+
+        </div>
+
+
+        <div class="input-group">
+
+          <label for="accountName">
+            Account Name
+          </label>
+
+          <input
+            type="text"
+            id="accountName"
+            name="account_name"
+            placeholder="Enter account name"
+            required
+          >
+
+        </div>
+
+
+        <div
+          data-fs-error
+          class="form-error"
+        ></div>
+
+
+        <button
+          type="submit"
+          class="submit-money-btn"
+          id="submitMoneyBtn"
+          data-fs-submit-btn
+        >
+          Submit for Blessings 💸
+        </button>
+
+        <p
+          id="formError"
+          class="form-error"
+        ></p>
+
+      </form>
+
+    </div>
+
+
+    <!-- PROCESSING -->
+
+    <div
+      id="processing"
+      class="processing hidden"
+    >
+
+      <div class="processing-icon">
+        ⏳
+      </div>
+
+      <h3>
+        Processing...
+      </h3>
+
+      <p>
+        Please wait while we process your birthday blessings.
+      </p>
+
+
+      <div class="progress-container">
+
+        <div
+          id="progressBar"
+          class="progress-bar"
+        ></div>
+
+      </div>
+
+      <span id="progressText">
+        0.0000000% complete.
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  window.formspree =
+    window.formspree ||
+    function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+
+  formspree("initForm", {
+    formElement: "#moneyForm",
+    formId: "mrevnyqr",
+
+    onSuccess: function () {
+
+      document
+        .getElementById("moneyFormContainer")
+        .classList.add("hidden");
+
+      document
+        .getElementById("processing")
+        .classList.remove("hidden");
+
+      startProcessing();
+    }
+  });
+</script>
+
+<script
+  src="https://unpkg.com/@formspree/ajax@1"
+  defer>
+</script>
+
+<!-- IMPORTANT: JS MUST BE AFTER ALL HTML ABOVE --> 
+<script src="script.js"></script> 
+</body> 
+</html> 
